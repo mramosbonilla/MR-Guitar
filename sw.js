@@ -1,4 +1,4 @@
-const CACHE='mr-guitar-v22-34-20261114';
+const CACHE='mr-guitar-v22-36-20261114';
 const ASSETS=['./', './index.html', './manifest.webmanifest', './guitarras-portada-191.webp', './icon-192.png', './icon-512.png', './fundamentos/antecesores-historicos.webp', './fundamentos/clasica-natural.webp', './fundamentos/clavijas-acustica.webp', './fundamentos/electrica-sunburst.webp', './fundamentos/electroacustica-negra.webp', './fundamentos/cabezal-clasica.webp', './fundamentos/diagrama-sonido.svg', './fundamentos/diagrama-cuerda.svg', './fundamentos/diagrama-calibres.svg', './fundamentos/diagrama-octavas.svg', './fundamentos/diagrama-trastes.svg', './fundamentos/diagrama-acordes.svg', './fundamentos/diagrama-escalas.svg', './fundamentos/diagrama-ritmo.svg', './fundamentos/diagrama-cuidado.svg'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));self.skipWaiting()});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE&&(k.startsWith('guitar-master-')||k.startsWith('mr-guitar-'))).map(k=>caches.delete(k)))));self.clients.claim()});
