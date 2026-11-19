@@ -206,7 +206,7 @@ body[data-section="learning"] #gmPracticeFret{display:none!important}
 #mrScaleSequence code,#mrScaleSequence pre,#scaleExplorer details code,#scaleExplorer details pre{white-space:pre-wrap!important;overflow-wrap:anywhere!important;max-width:100%}
 #mrTheoryLab .mr61CircleHear{display:block;margin:14px 0 8px;padding:12px 17px;background:#2469b4;color:white;border:1px solid #8bc5fa;border-radius:12px;font-weight:800;min-height:48px}
 #mr61CircleStatus{display:block;font-size:13px;color:#c0dafa;min-height:20px;margin-bottom:10px}
-</style></head><body><main class="shell"><header class="top"><div><div class="eyebrow">ROCK ACADEMY · VOL. 22.74</div><div class="logo">MR <span>GUITAR</span> <span style="font-size:.5em">⚡</span></div></div><div class="chip">🎸 CLÁSICA · ELECTROACÚSTICA · ELÉCTRICA</div></header><div id="homeScreen"><section aria-label="Portada de MR Guitar" class="home-art"><div class="hero-stage"><img alt="Guitarra electroacústica negra, guitarra clásica de madera y guitarra eléctrica sunburst" class="hero-guitars" src="guitarras-portada-191.webp"/></div><div class="hero-copy"><div class="tag">MR GUITAR · ROCK ACADEMY</div><h1>APRENDE. <em>PRACTICA.</em> TOCA.</h1></div></section><div class="home-doors"><button class="home-door" id="goLearning" type="button"><span class="em">🎓 🎸</span><b>ESTUDIO / PRÁCTICA</b><small>Aprende con lecciones guiadas de notas, intervalos, acordes, escalas, ritmo y armonía.</small></button><button class="home-door game" id="goGame" type="button"><span class="em">🏆 ⚡</span><b>JUEGO / CONCIERTO</b><small>Identifica notas, encuentra posiciones y construye acordes. Suma puntos y supera tus retos.</small></button></div></div><nav class="subnav" id="sectionNav"><button class="btn ghost" id="goHome" type="button">⌂ INICIO</button><button class="btn secondary" id="navLearning" type="button">🎓 ESTUDIO / PRÁCTICA</button><button class="btn secondary" id="navGame" type="button">⚡ JUEGO</button></nav><div id="workArea"><button id="gmFocusBack" type="button">← Volver a Estudio / Práctica</button><section class="gm-tools" id="gmTools"><div class="gm-tool-links"><button id="gmOpenTuner" type="button">🎯 Afinador</button><button id="gmOpenListen" type="button">🎙️ Escuchar guitarra</button><button id="gmOpenMetro" type="button">🥁 Metrónomo</button><button id="gmOpenReading" type="button">🎼 Leer y contar</button></div><div class="gm-tool-panel" hidden="" id="gmMetro"><h2>🥁 Metrónomo</h2><p>Ajusta la velocidad. Puedes mantener el pulso mientras practicas otras secciones.</p><div class="gm-tempo"><button id="gmDown" type="button">−5</button><strong id="gmBpmValue">80 BPM</strong><button id="gmUp" type="button">+5</button></div><input aria-label="Velocidad del metrónomo" id="gmBpm" max="240" min="30" type="range" value="80"/><label>Compás <select id="gmMeter"><option>4/4</option><option>2/4</option><option>3/4</option><option>6/8</option></select></label><label><input checked="" id="gmAccent" type="checkbox"/> Acentuar primer pulso</label><div class="gm-beats" id="gmBeats"></div><button id="gmPlay" type="button">▶ Iniciar metrónomo</button><p aria-live="polite" id="gmMetroStatus">Detenido</p></div><div class="gm-tool-panel" hidden="" id="gmReading"><h2>🎼 Ritmo y tablatura · Leer y contar</h2><p>Selecciona una figura: verás su escritura en el pentagrama, su duración y cómo contarla.</p><div class="gm-figures"><button data-gmfig="whole">Redonda</button><button data-gmfig="half">Blanca</button><button data-gmfig="quarter">Negra</button><button data-gmfig="eighth">Corchea</button><button data-gmfig="sixteenth">Semicorchea</button></div><svg aria-label="Pentagrama musical interactivo" id="gmStaff" role="img" viewbox="0 0 480 170"></svg><div aria-live="polite" id="gmFigureInfo"></div><button id="gmTap" type="button">👆 Marcar pulso</button><span id="gmTapInfo"> Pulsa siguiendo el metrónomo</span></div><div class="gm-tool-panel" hidden="" id="gmPractice"><h2>🎸 Práctica de notas y escalas</h2><div class="gm-figures"><button data-gmmode="screen" type="button">👆 Pantalla</button><button data-gmmode="guitar" type="button">🎙️ Guitarra real</button></div><p id="gmPracticeInfo">Selecciona cómo practicar. Para guitarra real, activa el micrófono en «Escuchar guitarra».</p><label>Ejercicio <select id="gmExercise"><option value="chromatic">Cromática: DO–RE–MI–FA–SOL–LA–SI–DO</option><option value="pentatonic">Pentatónica menor de LA: LA–DO–RE–MI–SOL–LA</option></select></label><div id="gmExpected"></div><div aria-live="polite" class="gm-live-feedback" id="gmPracticeLive"><div class="gm-live-target">🎯 Nota solicitada: <strong id="gmPracticeTarget">—</strong></div><div class="gm-live-result" id="gmPracticeResult">Pulsa Iniciar ejercicio</div></div><div class="gm-fret-controls"><label>Vista del diapasón <select id="gmFretView"><option value="theory">📘 Didáctico · notas y trastes</option><option value="real">🎸 Mástil realista</option></select></label><label class="gm-open-switch"><input checked="" id="gmShowOpen" type="checkbox"/> Mostrar notas al aire a la izquierda</label></div><p class="gm-fret-guide">Las referencias de los trastes 3, 5, 7 y 12 están señaladas. Puedes cambiar la notación musical en el selector general.</p><div class="gm-practice-fret"><svg aria-label="Diapasón de práctica interactivo" id="gmPracticeFret" role="img" viewbox="0 0 940 300"></svg></div><div aria-live="polite" id="gmPracticeProgress">0 notas reconocidas</div><div class="gm-figures"><button id="gmPracticeStart" type="button">▶ Iniciar ejercicio</button><button id="gmPracticeReset" type="button">↺ Reiniciar</button></div><p class="gm-caveat">La evaluación inicial comprueba las notas en orden. La precisión rítmica y los acordes rasgueados requieren calibración adicional.</p></div></section><section hidden="" id="micLab"><h2>🎙️ Escuchar guitarra · Notas y diapasón</h2><p class="mic-small">Toca una sola nota en tu guitarra. La aplicación mostrará su nombre, afinación y todas sus posiciones posibles en el diapasón, según el rango de trastes seleccionado (5, 12, 16 o 24). No es necesario conectar cables.</p><div class="mic-actions"><button id="micStart" type="button">🎙️ Activar micrófono</button><button disabled="" id="micStop" type="button">Detener</button></div><div aria-live="polite" class="mic-status" id="micStatus">Micrófono apagado. Usa HTTPS y concede permiso cuando lo solicite el navegador.</div><div aria-live="polite" id="micReadout">—</div><div id="micDetails">Afinación estándar: MI · LA · RE · SOL · SI · MI</div><div id="micGauge"><span id="micNeedle"></span></div><div class="field" style="max-width:340px"><label for="micString">Cuerda que estás tocando (opcional)</label><select id="micString"><option value="auto">Automática · posición sugerida</option><option value="0">6ª · MI grave</option><option value="1">5ª · LA</option><option value="2">4ª · RE</option><option value="3">3ª · SOL</option><option value="4">2ª · SI</option><option value="5">1ª · MI agudo</option></select></div><div aria-live="polite" class="mic-small" id="micPosition">Toca una nota para ver todas sus posiciones por octava.</div><svg aria-label="Diapasón con ubicaciones de la nota detectada" id="micFret" role="img" viewbox="0 0 960 290"></svg><p class="mic-small">Todos los círculos tienen el mismo tamaño. El borde blanco marca todas las posiciones con exactamente la misma nota y octava detectadas. Las octavas graves son más oscuras y las agudas más claras. El micrófono no identifica cuerda ni traste. Para mayor precisión, toca una cuerda a la vez y evita el ruido de fondo.</p></section><div id="learningMenu"><h2 class="sectiontitle">TU ACADEMIA · APRENDE PASO A PASO</h2><p class="muted">Cada módulo explica la teoría, la muestra en el diapasón y te permite escucharla.</p><div class="learning-menu"><button id="quickFret" type="button"><span>🎸</span>Diapasón y notas</button><button id="quickChords" type="button"><span>🎼</span>Acordes</button><button id="quickScales" type="button"><span>🎶</span>Escalas y patrones</button><button id="quickIntervals" type="button"><span>🎹</span>Intervalos</button><button id="quickHarmony" type="button"><span>🎼</span>Armonía</button><button id="quickRhythm" type="button"><span>🥁</span>Ritmo y tablatura</button></div></div><h2 class="sectiontitle" id="modeHeading">ELIGE TU DESAFÍO</h2><div class="modes" id="modes"><button class="mode active" data-mode="identify"><span class="ico">🎯</span><b>IDENTIFICA</b><small>¿Qué nota está iluminada?</small></button><button class="mode" data-mode="find"><span class="ico">🔎</span><b>ENCUENTRA</b><small>Localiza la nota en la cuerda.</small></button><button class="mode" data-mode="chord"><span class="ico">🎼</span><b>CHORD MASTER</b><small>Construye y reconoce acordes.</small></button><button class="mode" data-mode="mix"><span class="ico">⚡</span><b>ROCK CHALLENGE</b><small>Todos los retos en un concierto.</small></button></div><div class="layout"><aside class="panel"><h2>⚙️ TU SETLIST</h2><div id="gameSettings"><div class="field"><label for="player">NOMBRE DEL ROCKSTAR</label><input id="player" maxlength="24" placeholder="Tu nombre" value="Rockstar"/></div><div class="grid2"><div class="field"><label for="seconds">SEGUNDOS / RETO</label><select id="seconds"><option>5</option><option selected="">10</option><option>15</option><option>20</option><option>30</option><option>45</option></select></div><div class="field"><label for="count">PREGUNTAS</label><select id="count"><option>10</option><option selected="">20</option><option>30</option><option>50</option></select></div></div></div><div class="grid2"><div class="field"><label for="frets">TRASTES</label><select id="frets"><option value="5">0–5</option><option selected="" value="12">0–12</option><option value="16">0–16</option><option value="24">0–24</option></select></div><div class="field"><label for="level">DIFICULTAD</label><select id="level"><option value="easy">Principiante</option><option value="medium">Intermedio</option><option value="hard">Avanzado</option></select></div></div><div class="field"><label for="notation">NOTACIÓN MUSICAL</label><select id="notation"><option value="both">DO (C) · ambas</option><option value="latin">DO · RE · MI</option><option value="letter">C · D · E</option></select></div><label class="toggle"><input checked="" id="sound" type="checkbox"/> 🔊 Sonido de guitarra y efectos</label><button class="btn full" id="start">▶ EMPEZAR CONCIERTO</button><button class="btn secondary full" id="study" style="margin-top:9px">🎓 EXPLORAR DIAPASÓN</button><button class="btn secondary full" id="exploreChords" style="margin-top:9px">🎼 EXPLORAR ACORDES</button><button class="btn secondary full" id="exploreScales" style="margin-top:9px">🎶 EXPLORAR ESCALAS</button><div class="field hide" id="scaleExplorer"><label for="scaleRoot">NOTA FUNDAMENTAL</label><select id="scaleRoot"></select><label for="scaleType" style="margin-top:10px;display:block">TIPO DE ESCALA</label><select id="scaleType"></select><label for="scaleView" style="margin-top:10px;display:block">VISUALIZACIÓN</label><select id="scaleView"><option selected="" value="position">Regiones del mástil · 6 cuerdas (1–5)</option><option value="all">Diapasón completo</option><option value="range">Por intervalo de trastes</option></select><div class="hide" id="scalePositionBox" style="margin-top:10px"><label for="scalePosition">POSICIÓN</label><select id="scalePosition"><option value="0">Región 1</option><option value="1">Región 2</option><option value="2">Región 3</option><option value="3">Región 4</option><option value="4">Región 5</option></select></div><div class="hide" id="scaleRangeBox" style="margin-top:10px"><label>DESDE EL TRASTE</label><select id="scaleFrom"></select><label style="display:block;margin-top:9px">HASTA EL TRASTE</label><select id="scaleTo"></select></div><div class="lesson-box" id="scaleLesson"></div><div class="bottomrow"><button class="btn ghost" id="scalePrev" type="button">← ANTERIOR</button><button class="btn secondary" id="scaleNext" type="button">SIGUIENTE PATRÓN →</button></div><div class="field" id="tempoBox"><div id="mr55ScalePlay" class="mr55ScalePlay"><button class="btn secondary" id="scalePractice" type="button">▶ Tocar escala</button><span id="mr55ScaleProgress" aria-live="polite">La escala se reproduce automáticamente y se ilumina cada nota.</span></div><label for="scaleBpm">VELOCIDAD DE PRÁCTICA · <strong id="bpmValue">60</strong> BPM</label><input id="scaleBpm" max="400" min="40" step="5" style="width:100%;accent-color:#2563eb" type="range" value="60"/><p class="muted">Empieza despacio y aumenta hasta 400 BPM para practicar velocidad. A BPM altos, prioriza la precisión y la relajación de la mano.</p></div><p class="muted">Azul: tónica · Verde: demás notas · Números pequeños: dedo sugerido (1 índice, 2 medio, 3 anular, 4 meñique). Los patrones se calculan en afinación estándar y muestran todas las notas de la escala en las seis cuerdas dentro de cada región de trastes.</p></div><div class="field hide" id="noteExplorer"><label class="toggle" style="margin:0 0 12px"><input checked="" id="showAccidentals" type="checkbox"/> Mostrar sostenidos / bemoles (notas alteradas)</label><label>RESALTAR NOTAS EN TODO EL DIAPASÓN</label><div id="noteChoices" style="display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:9px"></div><div class="bottomrow"><button class="btn ghost" id="allNotes" style="padding:8px 11px" type="button">Todas</button><button class="btn ghost" id="clearNotes" style="padding:8px 11px" type="button">Limpiar selección</button></div><p class="muted">Selecciona una o varias notas. Se iluminarán todas sus posiciones en las seis cuerdas. Las notas naturales siempre pueden seleccionarse; las alteradas se pueden ocultar o mostrar.</p></div><div class="field hide" id="theoryExplorer"><div id="theoryContent"></div></div><div class="field hide" id="chordExplorer"><label for="chordRoot">NOTA FUNDAMENTAL</label><select id="chordRoot"></select><label for="chordPick" style="margin-top:10px;display:block">VARIANTE DEL ACORDE</label><select id="chordPick"></select><div id="mr59Voicing" class="mr59-voicing"><button type="button" id="mr59Prev">◀ Anterior</button><span id="mr59VoicingInfo" aria-live="polite">Posición original</span><button type="button" id="mr59Next">Siguiente ▶</button></div><p class="muted">Toca las posiciones iluminadas o rasguea para escuchar el acorde. X significa cuerda silenciada.</p></div><div class="record" id="record"></div><div class="history" id="history"></div></aside><section class="panel"><div class="stats" id="gameStats"><div class="stat"><small>PREGUNTA</small><strong id="qstat">—</strong></div><div class="stat"><small>PUNTOS</small><strong id="points">0</strong></div><div class="stat"><small>LOGRO</small><strong id="accuracy">—</strong></div><div class="stat"><small>TIEMPO</small><strong id="clock">—</strong></div></div><div class="question" id="question"><small>BIENVENIDO AL ESCENARIO</small><h2>¿LISTO PARA ROCKEAR?</h2><p>Elige un desafío, personaliza tu partida y presiona «Empezar concierto». También puedes explorar libremente las notas de la guitarra.</p></div><div class="timer"><div id="bar"></div></div><div class="fretwrap"><svg aria-label="Diapasón interactivo de seis cuerdas con afinación estándar" id="fretboard" role="img" viewbox="0 0 900 286"></svg><div class="legend">Como en tu guitarra: MI agudo arriba · MI grave abajo · toca una cuerda para escucharla o responder</div></div><div class="study" id="selectedNotes"></div><div class="answers" id="answers"></div><div id="feedback"></div><div class="bottomrow"><button class="btn hide" id="submit">COMPROBAR ACORDE</button><button class="btn hide" id="next">SIGUIENTE →</button><button class="btn secondary" id="strum">🎸 RASGUEAR CUERDAS</button><button class="btn ghost" id="replay">♪ ESCUCHAR</button><span class="muted" id="hint">Afinación estándar E–A–D–G–B–E</span></div></section></div><div class="foot">MR GUITAR · EDICIÓN ROCK ACADEMY · HECHO PARA APRENDER DE VERDAD 🎸</div></div></main><script id="gm-octaves-212">
+</style></head><body><main class="shell"><header class="top"><div><div class="eyebrow">ROCK ACADEMY · VOL. 22.77</div><div class="logo">MR <span>GUITAR</span> <span style="font-size:.5em">⚡</span></div></div><div class="chip">🎸 CLÁSICA · ELECTROACÚSTICA · ELÉCTRICA</div></header><div id="homeScreen"><section aria-label="Portada de MR Guitar" class="home-art"><div class="hero-stage"><img alt="Guitarra electroacústica negra, guitarra clásica de madera y guitarra eléctrica sunburst" class="hero-guitars" src="guitarras-portada-191.webp"/></div><div class="hero-copy"><div class="tag">MR GUITAR · ROCK ACADEMY</div><h1>APRENDE. <em>PRACTICA.</em> TOCA.</h1></div></section><div class="home-doors"><button class="home-door" id="goLearning" type="button"><span class="em">🎓 🎸</span><b>ESTUDIO / PRÁCTICA</b><small>Aprende con lecciones guiadas de notas, intervalos, acordes, escalas, ritmo y armonía.</small></button><button class="home-door game" id="goGame" type="button"><span class="em">🏆 ⚡</span><b>JUEGO / CONCIERTO</b><small>Identifica notas, encuentra posiciones y construye acordes. Suma puntos y supera tus retos.</small></button></div></div><nav class="subnav" id="sectionNav"><button class="btn ghost" id="goHome" type="button">⌂ INICIO</button><button class="btn secondary" id="navLearning" type="button">🎓 ESTUDIO / PRÁCTICA</button><button class="btn secondary" id="navGame" type="button">⚡ JUEGO</button></nav><div id="workArea"><button id="gmFocusBack" type="button">← Volver a Estudio / Práctica</button><section class="gm-tools" id="gmTools"><div class="gm-tool-links"><button id="gmOpenTuner" type="button">🎯 Afinador</button><button id="gmOpenListen" type="button">🎙️ Escuchar guitarra</button><button id="gmOpenMetro" type="button">🥁 Metrónomo</button><button id="gmOpenReading" type="button">🎼 Leer y contar</button></div><div class="gm-tool-panel" hidden="" id="gmMetro"><h2>🥁 Metrónomo</h2><p>Ajusta la velocidad. Puedes mantener el pulso mientras practicas otras secciones.</p><div class="gm-tempo"><button id="gmDown" type="button">−5</button><strong id="gmBpmValue">80 BPM</strong><button id="gmUp" type="button">+5</button></div><input aria-label="Velocidad del metrónomo" id="gmBpm" max="240" min="30" type="range" value="80"/><label>Compás <select id="gmMeter"><option>4/4</option><option>2/4</option><option>3/4</option><option>6/8</option></select></label><label><input checked="" id="gmAccent" type="checkbox"/> Acentuar primer pulso</label><div class="gm-beats" id="gmBeats"></div><button id="gmPlay" type="button">▶ Iniciar metrónomo</button><p aria-live="polite" id="gmMetroStatus">Detenido</p></div><div class="gm-tool-panel" hidden="" id="gmReading"><h2>🎼 Ritmo y tablatura · Leer y contar</h2><p>Selecciona una figura: verás su escritura en el pentagrama, su duración y cómo contarla.</p><div class="gm-figures"><button data-gmfig="whole">Redonda</button><button data-gmfig="half">Blanca</button><button data-gmfig="quarter">Negra</button><button data-gmfig="eighth">Corchea</button><button data-gmfig="sixteenth">Semicorchea</button></div><svg aria-label="Pentagrama musical interactivo" id="gmStaff" role="img" viewbox="0 0 480 170"></svg><div aria-live="polite" id="gmFigureInfo"></div><button id="gmTap" type="button">👆 Marcar pulso</button><span id="gmTapInfo"> Pulsa siguiendo el metrónomo</span></div><div class="gm-tool-panel" hidden="" id="gmPractice"><h2>🎸 Práctica de notas y escalas</h2><div class="gm-figures"><button data-gmmode="screen" type="button">👆 Pantalla</button><button data-gmmode="guitar" type="button">🎙️ Guitarra real</button></div><p id="gmPracticeInfo">Selecciona cómo practicar. Para guitarra real, activa el micrófono en «Escuchar guitarra».</p><label>Ejercicio <select id="gmExercise"><option value="chromatic">Cromática: DO–RE–MI–FA–SOL–LA–SI–DO</option><option value="pentatonic">Pentatónica menor de LA: LA–DO–RE–MI–SOL–LA</option></select></label><div id="gmExpected"></div><div aria-live="polite" class="gm-live-feedback" id="gmPracticeLive"><div class="gm-live-target">🎯 Nota solicitada: <strong id="gmPracticeTarget">—</strong></div><div class="gm-live-result" id="gmPracticeResult">Pulsa Iniciar ejercicio</div></div><div class="gm-fret-controls"><label>Vista del diapasón <select id="gmFretView"><option value="theory">📘 Didáctico · notas y trastes</option><option value="real">🎸 Mástil realista</option></select></label><label class="gm-open-switch"><input checked="" id="gmShowOpen" type="checkbox"/> Mostrar notas al aire a la izquierda</label></div><p class="gm-fret-guide">Las referencias de los trastes 3, 5, 7 y 12 están señaladas. Puedes cambiar la notación musical en el selector general.</p><div class="gm-practice-fret"><svg aria-label="Diapasón de práctica interactivo" id="gmPracticeFret" role="img" viewbox="0 0 940 300"></svg></div><div aria-live="polite" id="gmPracticeProgress">0 notas reconocidas</div><div class="gm-figures"><button id="gmPracticeStart" type="button">▶ Iniciar ejercicio</button><button id="gmPracticeReset" type="button">↺ Reiniciar</button></div><p class="gm-caveat">La evaluación inicial comprueba las notas en orden. La precisión rítmica y los acordes rasgueados requieren calibración adicional.</p></div></section><section hidden="" id="micLab"><h2>🎙️ Escuchar guitarra · Notas y diapasón</h2><p class="mic-small">Toca una sola nota en tu guitarra. La aplicación mostrará su nombre, afinación y todas sus posiciones posibles en el diapasón, según el rango de trastes seleccionado (5, 12, 16 o 24). No es necesario conectar cables.</p><div class="mic-actions"><button id="micStart" type="button">🎙️ Activar micrófono</button><button disabled="" id="micStop" type="button">Detener</button></div><div aria-live="polite" class="mic-status" id="micStatus">Micrófono apagado. Usa HTTPS y concede permiso cuando lo solicite el navegador.</div><div aria-live="polite" id="micReadout">—</div><div id="micDetails">Afinación estándar: MI · LA · RE · SOL · SI · MI</div><div id="micGauge"><span id="micNeedle"></span></div><div class="field" style="max-width:340px"><label for="micString">Cuerda que estás tocando (opcional)</label><select id="micString"><option value="auto">Automática · posición sugerida</option><option value="0">6ª · MI grave</option><option value="1">5ª · LA</option><option value="2">4ª · RE</option><option value="3">3ª · SOL</option><option value="4">2ª · SI</option><option value="5">1ª · MI agudo</option></select></div><div aria-live="polite" class="mic-small" id="micPosition">Toca una nota para ver todas sus posiciones por octava.</div><svg aria-label="Diapasón con ubicaciones de la nota detectada" id="micFret" role="img" viewbox="0 0 960 290"></svg><p class="mic-small">Todos los círculos tienen el mismo tamaño. El borde blanco marca todas las posiciones con exactamente la misma nota y octava detectadas. Las octavas graves son más oscuras y las agudas más claras. El micrófono no identifica cuerda ni traste. Para mayor precisión, toca una cuerda a la vez y evita el ruido de fondo.</p></section><div id="learningMenu"><h2 class="sectiontitle">TU ACADEMIA · APRENDE PASO A PASO</h2><p class="muted">Cada módulo explica la teoría, la muestra en el diapasón y te permite escucharla.</p><div class="learning-menu"><button id="quickFret" type="button"><span>🎸</span>Diapasón y notas</button><button id="quickChords" type="button"><span>🎼</span>Acordes</button><button id="quickScales" type="button"><span>🎶</span>Escalas y patrones</button><button id="quickIntervals" type="button"><span>🎹</span>Intervalos</button><button id="quickHarmony" type="button"><span>🎼</span>Armonía</button><button id="quickRhythm" type="button"><span>🥁</span>Ritmo y tablatura</button></div></div><h2 class="sectiontitle" id="modeHeading">ELIGE TU DESAFÍO</h2><div class="modes" id="modes"><button class="mode active" data-mode="identify"><span class="ico">🎯</span><b>IDENTIFICA</b><small>¿Qué nota está iluminada?</small></button><button class="mode" data-mode="find"><span class="ico">🔎</span><b>ENCUENTRA</b><small>Localiza la nota en la cuerda.</small></button><button class="mode" data-mode="chord"><span class="ico">🎼</span><b>CHORD MASTER</b><small>Construye y reconoce acordes.</small></button><button class="mode" data-mode="mix"><span class="ico">⚡</span><b>ROCK CHALLENGE</b><small>Todos los retos en un concierto.</small></button></div><div class="layout"><aside class="panel"><h2>⚙️ TU SETLIST</h2><div id="gameSettings"><div class="field"><label for="player">NOMBRE DEL ROCKSTAR</label><input id="player" maxlength="24" placeholder="Tu nombre" value="Rockstar"/></div><div class="grid2"><div class="field"><label for="seconds">SEGUNDOS / RETO</label><select id="seconds"><option>5</option><option selected="">10</option><option>15</option><option>20</option><option>30</option><option>45</option></select></div><div class="field"><label for="count">PREGUNTAS</label><select id="count"><option>10</option><option selected="">20</option><option>30</option><option>50</option></select></div></div></div><div class="grid2"><div class="field"><label for="frets">TRASTES</label><select id="frets"><option value="5">0–5</option><option selected="" value="12">0–12</option><option value="16">0–16</option><option value="24">0–24</option></select></div><div class="field"><label for="level">DIFICULTAD</label><select id="level"><option value="easy">Principiante</option><option value="medium">Intermedio</option><option value="hard">Avanzado</option></select></div></div><div class="field"><label for="notation">NOTACIÓN MUSICAL</label><select id="notation"><option value="both">DO (C) · ambas</option><option value="latin">DO · RE · MI</option><option value="letter">C · D · E</option></select></div><label class="toggle"><input checked="" id="sound" type="checkbox"/> 🔊 Sonido de guitarra y efectos</label><button class="btn full" id="start">▶ EMPEZAR CONCIERTO</button><button class="btn secondary full" id="study" style="margin-top:9px">🎓 EXPLORAR DIAPASÓN</button><button class="btn secondary full" id="exploreChords" style="margin-top:9px">🎼 EXPLORAR ACORDES</button><button class="btn secondary full" id="exploreScales" style="margin-top:9px">🎶 EXPLORAR ESCALAS</button><div class="field hide" id="scaleExplorer"><label for="scaleRoot">NOTA FUNDAMENTAL</label><select id="scaleRoot"></select><label for="scaleType" style="margin-top:10px;display:block">TIPO DE ESCALA</label><select id="scaleType"></select><label for="scaleView" style="margin-top:10px;display:block">VISUALIZACIÓN</label><select id="scaleView"><option selected="" value="position">Regiones del mástil · 6 cuerdas (1–5)</option><option value="all">Diapasón completo</option><option value="range">Por intervalo de trastes</option></select><div class="hide" id="scalePositionBox" style="margin-top:10px"><label for="scalePosition">POSICIÓN</label><select id="scalePosition"><option value="0">Región 1</option><option value="1">Región 2</option><option value="2">Región 3</option><option value="3">Región 4</option><option value="4">Región 5</option></select></div><div class="hide" id="scaleRangeBox" style="margin-top:10px"><label>DESDE EL TRASTE</label><select id="scaleFrom"></select><label style="display:block;margin-top:9px">HASTA EL TRASTE</label><select id="scaleTo"></select></div><div class="lesson-box" id="scaleLesson"></div><div class="bottomrow"><button class="btn ghost" id="scalePrev" type="button">← ANTERIOR</button><button class="btn secondary" id="scaleNext" type="button">SIGUIENTE PATRÓN →</button></div><div class="field" id="tempoBox"><div id="mr55ScalePlay" class="mr55ScalePlay"><button class="btn secondary" id="scalePractice" type="button">▶ Tocar escala</button><span id="mr55ScaleProgress" aria-live="polite">La escala se reproduce automáticamente y se ilumina cada nota.</span></div><label for="scaleBpm">VELOCIDAD DE PRÁCTICA · <strong id="bpmValue">60</strong> BPM</label><input id="scaleBpm" max="400" min="40" step="5" style="width:100%;accent-color:#2563eb" type="range" value="60"/><p class="muted">Empieza despacio y aumenta hasta 400 BPM para practicar velocidad. A BPM altos, prioriza la precisión y la relajación de la mano.</p></div><p class="muted">Azul: tónica · Verde: demás notas · Números pequeños: dedo sugerido (1 índice, 2 medio, 3 anular, 4 meñique). Los patrones se calculan en afinación estándar y muestran todas las notas de la escala en las seis cuerdas dentro de cada región de trastes.</p></div><div class="field hide" id="noteExplorer"><label class="toggle" style="margin:0 0 12px"><input checked="" id="showAccidentals" type="checkbox"/> Mostrar sostenidos / bemoles (notas alteradas)</label><label>RESALTAR NOTAS EN TODO EL DIAPASÓN</label><div id="noteChoices" style="display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:9px"></div><div class="bottomrow"><button class="btn ghost" id="allNotes" style="padding:8px 11px" type="button">Todas</button><button class="btn ghost" id="clearNotes" style="padding:8px 11px" type="button">Limpiar selección</button></div><p class="muted">Selecciona una o varias notas. Se iluminarán todas sus posiciones en las seis cuerdas. Las notas naturales siempre pueden seleccionarse; las alteradas se pueden ocultar o mostrar.</p></div><div class="field hide" id="theoryExplorer"><div id="theoryContent"></div></div><div class="field hide" id="chordExplorer"><label for="chordRoot">NOTA FUNDAMENTAL</label><select id="chordRoot"></select><label for="chordPick" style="margin-top:10px;display:block">VARIANTE DEL ACORDE</label><select id="chordPick"></select><div id="mr59Voicing" class="mr59-voicing"><button type="button" id="mr59Prev">◀ Anterior</button><span id="mr59VoicingInfo" aria-live="polite">Posición original</span><button type="button" id="mr59Next">Siguiente ▶</button></div><p class="muted">Toca las posiciones iluminadas o rasguea para escuchar el acorde. X significa cuerda silenciada.</p></div><div class="record" id="record"></div><div class="history" id="history"></div></aside><section class="panel"><div class="stats" id="gameStats"><div class="stat"><small>PREGUNTA</small><strong id="qstat">—</strong></div><div class="stat"><small>PUNTOS</small><strong id="points">0</strong></div><div class="stat"><small>LOGRO</small><strong id="accuracy">—</strong></div><div class="stat"><small>TIEMPO</small><strong id="clock">—</strong></div></div><div class="question" id="question"><small>BIENVENIDO AL ESCENARIO</small><h2>¿LISTO PARA ROCKEAR?</h2><p>Elige un desafío, personaliza tu partida y presiona «Empezar concierto». También puedes explorar libremente las notas de la guitarra.</p></div><div class="timer"><div id="bar"></div></div><div class="fretwrap"><svg aria-label="Diapasón interactivo de seis cuerdas con afinación estándar" id="fretboard" role="img" viewbox="0 0 900 286"></svg><div class="legend">Como en tu guitarra: MI agudo arriba · MI grave abajo · toca una cuerda para escucharla o responder</div></div><div class="study" id="selectedNotes"></div><div class="answers" id="answers"></div><div id="feedback"></div><div class="bottomrow"><button class="btn hide" id="submit">COMPROBAR ACORDE</button><button class="btn hide" id="next">SIGUIENTE →</button><button class="btn secondary" id="strum">🎸 RASGUEAR CUERDAS</button><button class="btn ghost" id="replay">♪ ESCUCHAR</button><span class="muted" id="hint">Afinación estándar E–A–D–G–B–E</span></div></section></div><div class="foot">MR GUITAR · EDICIÓN ROCK ACADEMY · HECHO PARA APRENDER DE VERDAD 🎸</div></div></main><script id="gm-octaves-212">
 window.GM212={
  latin:['DO','DO♯','RE','RE♯','MI','FA','FA♯','SOL','SOL♯','LA','LA♯','SI'],
  eng:['C','C♯','D','D♯','E','F','F♯','G','G♯','A','A♯','B'],
@@ -879,7 +879,8 @@ if('serviceWorker' in navigator && (location.protocol==='https:' || location.hos
   const readout=el('gm211Cents');if(readout)readout.textContent='—';
  }
  parkNeedle();
- function frame(){if(!analyser)return;let data=new Float32Array(analyser.fftSize);analyser.getFloatTimeDomainData(data);let found=pitch(data,ctx.sampleRate),now=performance.now();
+ let compositionLevel=0;
+ function frame(){if(!analyser)return;let data=new Float32Array(analyser.fftSize);analyser.getFloatTimeDomainData(data);if(compositionMonitor){let sum=0;for(let i=0;i<data.length;i+=4)sum+=data[i]*data[i];compositionLevel=Math.sqrt(sum/(data.length/4));}let found=pitch(data,ctx.sampleRate),now=performance.now();
   if(found){let note=69+12*Math.log2(found.hz/440),rounded=Math.round(note),cents=(note-rounded)*100;
    history.push(rounded);if(history.length>7)history.shift();
    const modeNow=el('micLab')?.dataset.tuner==='yes',chosenNow=el('micString').value;
@@ -925,7 +926,10 @@ if('serviceWorker' in navigator && (location.protocol==='https:' || location.hos
   chordAnalyser=null;
  }
  window.addEventListener('mr-mic-state',e=>{if(!e.detail.active)chordAnalyser=null});
- window.mrSharedMic={start,stop,isActive:()=>!!stream,chordSpectrum,stopChordSpectrum};el('micStart').addEventListener('click',start);el('micStop').addEventListener('click',stop);document.addEventListener('visibilitychange',()=>{if(document.hidden&&(stream||starting))stop()});draw(null)
+ let compositionMonitor=false;
+ window.mrSharedMic={start,stop,isActive:()=>!!stream,chordSpectrum,stopChordSpectrum,
+  monitorComposition(on){compositionMonitor=on;compositionLevel=0},
+  compositionLevel:()=>compositionLevel};el('micStart').addEventListener('click',start);el('micStop').addEventListener('click',stop);document.addEventListener('visibilitychange',()=>{if(document.hidden&&(stream||starting))stop()});draw(null)
 })();
 </script><script id="gm203js">
 (()=>{'use strict';
@@ -1737,7 +1741,7 @@ function wireTabs(){panel.querySelectorAll('[data-tab]').forEach(e=>e.onclick=()
 const cagedShapes={C:[-1,3,2,0,1,0],A:[-1,0,2,2,2,0],G:[3,2,0,0,0,3],E:[0,2,2,1,0,0],D:[-1,-1,0,2,3,2]};
 const cagedRoots={C:0,A:9,G:7,E:4,D:2};
 let cagedRoot=0;
-function diagram(shape,shift){const frets=cagedShapes[shape];let out='<svg viewBox="0 0 100 140" aria-label="Forma '+shape+'">';for(let j=0;j<6;j++){let x=15+j*14;out+=`<line x1="${x}" y1="20" x2="${x}" y2="118" stroke="#b4d5ef"/>`};for(let j=0;j<6;j++){let y=20+j*19.6;out+=`<line x1="15" y1="${y}" x2="85" y2="${y}" stroke="#b4d5ef" stroke-width="${j===0&&!shift?4:1}"/>`};frets.forEach((f,j)=>{let x=15+j*14;if(f<0)out+=`<text x="${x}" y="13" font-size="12" text-anchor="middle" fill="#ffcccf">×</text>`;else if(!f&&!shift)out+=`<circle cx="${x}" cy="9" r="4" fill="none" stroke="#aee7ff" stroke-width="2"/>`;else out+=`<circle cx="${x}" cy="${20+(f+(shift?.5:-.5))*19.6}" r="7" fill="#3e9ee5"/><text x="${x}" y="${23+(f+(shift?.5:-.5))*19.6}" font-size="9" text-anchor="middle" fill="white">${f+shift}</text>`});return out+'</svg>'}
+function diagram(shape,shift){const frets=cagedShapes[shape];let out='<svg viewBox="-8 0 108 140" aria-label="Forma '+shape+'"><text x="3" y="32" text-anchor="middle" fill="#d6eaff" font-size="10" font-weight="700">'+(shift||1)+'</text>';for(let j=0;j<6;j++){let x=15+j*14;out+=`<line x1="${x}" y1="20" x2="${x}" y2="118" stroke="#b4d5ef"/>`};for(let j=0;j<6;j++){let y=20+j*19.6;out+=`<line x1="15" y1="${y}" x2="85" y2="${y}" stroke="#b4d5ef" stroke-width="${j===0&&!shift?4:1}"/>`};frets.forEach((f,j)=>{let x=15+j*14;if(f<0)out+=`<text x="${x}" y="13" font-size="12" text-anchor="middle" fill="#ffcccf">×</text>`;else if(!f&&!shift)out+=`<circle cx="${x}" cy="9" r="4" fill="none" stroke="#aee7ff" stroke-width="2"/>`;else out+=`<circle cx="${x}" cy="${20+(f+(shift?.5:-.5))*19.6}" r="7" fill="#3e9ee5"/><text x="${x}" y="${23+(f+(shift?.5:-.5))*19.6}" font-size="9" text-anchor="middle" fill="white">${f+shift}</text>`});return out+'</svg>'}
 function caged(){
  const forms=Object.keys(cagedShapes).map(shape=>({shape,shift:(cagedRoot-cagedRoots[shape]+12)%12})).sort((a,b)=>a.shift-b.shift);
  panel.innerHTML='<h3>🎸 Sistema CAGED</h3><p>Cinco digitaciones del mismo acorde mayor. Elige la fundamental y escucha cada posición.</p>'+tabs()+
@@ -1979,6 +1983,7 @@ update();
 })();
 </script>
 <style id="mr-2227-theory-clean">
+body.mr-theory-active #theoryExplorer,
 body.mr-theory-active #noteExplorer,
 body.mr-theory-active #chordExplorer,
 body.mr-theory-active #scaleExplorer,
@@ -2008,7 +2013,10 @@ const setActive=active=>{
   }
  }
 };
-theory.addEventListener('click',()=>setActive(true));
+theory.addEventListener('click',()=>{
+ setActive(true);
+ title('CÍRCULO DE QUINTAS Y CAGED','Explora tonalidades, digitaciones de acordes y técnicas de tablatura.','🎓 ACADEMIA INTERACTIVA');
+});
 dock.querySelectorAll('button').forEach(btn=>{
  if(btn!==theory)btn.addEventListener('click',()=>setActive(false));
 });
@@ -2881,13 +2889,41 @@ function tone(midi,duration=.7,delay=0){try{if(typeof mr54Pluck==='function')mr5
 function chord(root,degree,duration=1.15,delay=0){const quality=qualities[degree],base=48+root+steps[degree],third=quality==='m'?3:4,fifth=quality==='°'?6:7;mrHarmonyVoicing((root+steps[degree])%12,[0,third,fifth],base).forEach((m,i)=>tone(m,duration,delay+i*.055))}
 let harmonyTimers=[];function stopHarmony(){harmonyTimers.forEach(clearTimeout);harmonyTimers=[];const status=$('mr62HStatus');if(status)status.textContent='Reproducción detenida'}
 const har=$('mr2220Harmony');if(har){const wrap=document.createElement('div');wrap.id='mr62Harmony';wrap.innerHTML=`<h4>Laboratorio de progresiones</h4><p><b>¿Qué es una progresión?</b> Es una sucesión de acordes. Su orden produce sensación de reposo, movimiento o tensión. Por ejemplo, I–V–vi–IV es una secuencia habitual en pop y rock.</p><p><b>¿Por qué números romanos?</b> DO/C y RE/D nombran acordes concretos. I, ii, V indican su <b>grado dentro de la tonalidad seleccionada</b>, no el nombre fijo de una nota. Mayúscula = acorde mayor, minúscula = menor; ° = disminuido. DO mayor (C) es I en DO mayor, pero IV en SOL mayor. DO menor es Cm, no C+: C+ normalmente significa DO aumentado.</p><div class="mr62-grid"><label>Tonalidad mayor<select id="mr62Key"></select></label><label>Progresión<select id="mr62Pattern"><option value="0,4,5,3">I–V–vi–IV · Pop / rock</option><option value="0,3,4,0">I–IV–V–I · Clásica</option><option value="5,3,0,4">vi–IV–I–V · Emotiva</option><option value="1,4,0">ii–V–I · Jazz</option><option value="custom">Crear mi progresión</option></select></label></div><p class="mr62-muted">Los siete acordes diatónicos de la tonalidad:</p><div id="mr62Diatonic" class="mr62-chords"></div><div id="mr62Chosen" class="mr62-chords"></div><div class="mr62-actions"><button id="mr62PlayAll" type="button">▶ Tocar progresión</button><button id="mr62Stop" type="button">■ Detener</button><button id="mr62Clear" type="button">↺ Limpiar selección</button></div><div id="mr62HStatus" role="status" aria-live="polite">Pulsa un acorde para escucharlo o reproduce toda la progresión.</div><p class="mr62-muted">Puedes seleccionar los acordes de la tonalidad para crear tu propia secuencia. La notación latina o americana sigue la configuración general.</p>`;har.appendChild(wrap);const key=$('mr62Key'),pattern=$('mr62Pattern');american.forEach((n,i)=>{const op=document.createElement('option');op.value=i;op.textContent=latin[i]+' / '+n;key.appendChild(op)});let chosen=[0,4,5,3],custom=[];function render(){const root=+key.value;const grid=$('mr62Diatonic');grid.replaceChildren();steps.forEach((step,i)=>{const b=document.createElement('button');b.type='button';b.textContent=romans[i]+' · '+name(root+step)+qualities[i];b.onclick=()=>{stopHarmony();if(pattern.value!=='custom'){pattern.value='custom';chosen=[]}if(chosen.length<8)chosen.push(i);custom=chosen;chord(root,i);render()};grid.appendChild(b)});const area=$('mr62Chosen');area.replaceChildren();chosen.forEach((i,j)=>{const b=document.createElement('button');b.type='button';b.textContent=romans[i]+' · '+name(root+steps[i])+qualities[i];b.title='Escuchar acorde '+(j+1);b.onclick=()=>{stopHarmony();chord(root,i);$('mr62HStatus').textContent='Acorde '+(j+1)+' de '+chosen.length};area.appendChild(b)})}key.onchange=()=>{stopHarmony();render()};pattern.onchange=()=>{stopHarmony();chosen=pattern.value==='custom'?custom:pattern.value.split(',').map(Number);render()};$('mr62PlayAll').onclick=()=>{stopHarmony();if(!chosen.length){$('mr62HStatus').textContent='Selecciona al menos un acorde';return}const root=+key.value;chosen.forEach((i,j)=>{harmonyTimers.push(setTimeout(()=>{chord(root,i,1.2);$('mr62HStatus').textContent='Tocando '+(j+1)+'/'+chosen.length+': '+romans[i]+' · '+name(root+steps[i])+qualities[i]},j*1450))});harmonyTimers.push(setTimeout(()=>{$('mr62HStatus').textContent='Progresión completada'},chosen.length*1450))};$('mr62Stop').onclick=stopHarmony;$('mr62Clear').onclick=()=>{stopHarmony();custom=[];chosen=custom;pattern.value='custom';render()};$('mrGlobalNotation')?.addEventListener('change',render);$('notation')?.addEventListener('change',render);render()}
-const inter=$('mr2220Intervals');if(inter){const wrap=document.createElement('div');wrap.id='mr62Intervals';wrap.innerHTML=`<h4>Entrenamiento auditivo de intervalos</h4><p>Un <b>intervalo</b> es la distancia entre dos notas, medida en semitonos. Una tercera mayor tiene 4 semitonos y una tercera menor 3: esa diferencia ayuda a distinguir acordes mayores y menores. Una quinta justa tiene 7.</p><div class="mr62-grid"><label>Nota inicial<select id="mr62IRoot"></select></label><label>Intervalo<select id="mr62IType"></select></label></div><svg class="mr62-staff" id="mr62IStaff" viewBox="0 0 320 125" role="img" aria-label="Dos notas sobre pentagrama"></svg><div class="mr62-actions"><button id="mr62IMel" type="button">▶ Una después de otra</button><button id="mr62IHarm" type="button">♫ Simultáneas</button><button id="mr62IQuiz" type="button">? Adivina el intervalo</button><button id="mr62IReveal" type="button">Mostrar respuesta</button></div><p id="mr62IInfo"></p><p id="mr62IStatus" aria-live="polite"></p>`;inter.appendChild(wrap);const opts=[['Unísono',0,0],['Segunda menor',1,1],['Segunda mayor',2,1],['Tercera menor',3,2],['Tercera mayor',4,2],['Cuarta justa',5,3],['Tritono',6,4],['Quinta justa',7,4],['Sexta menor',8,5],['Sexta mayor',9,5],['Séptima menor',10,6],['Séptima mayor',11,6],['Octava justa',12,7]];const root=$('mr62IRoot'),type=$('mr62IType');american.forEach((n,i)=>root.add(new Option(latin[i]+' / '+n,i)));opts.forEach((o,i)=>type.add(new Option(o[0],i)));type.value='7';let quiz=false;function render(){const r=+root.value,o=opts[+type.value],svg=$('mr62IStaff');let lines=[42,57,72,87,102].map(y=>`<line x1="25" x2="295" y1="${y}" y2="${y}" stroke="#aec8e6"/>`).join('');const letters=[0,0,1,2,2,3,3,4,4,5,6,6],natural=[0,2,4,5,7,9,11];
+const inter=$('mr2220Intervals');if(inter){const wrap=document.createElement('div');wrap.id='mr62Intervals';wrap.innerHTML=`<h4>Entrenamiento auditivo de intervalos</h4><p>Un <b>intervalo</b> es la distancia entre dos notas, medida en semitonos. Una tercera mayor tiene 4 semitonos y una tercera menor 3: esa diferencia ayuda a distinguir acordes mayores y menores. Una quinta justa tiene 7.</p><div class="mr62-grid"><label>Nota inicial<select id="mr62IRoot"></select></label><label id="mr75StudyType">Intervalo<select id="mr62IType"></select></label><button id="mr75Practice" type="button" aria-pressed="false">Modo práctica</button></div><svg class="mr62-staff" id="mr62IStaff" viewBox="0 0 320 125" role="img" aria-label="Dos notas sobre pentagrama"></svg><div class="mr62-actions"><button id="mr62IMel" type="button">▶ Una después de otra</button><button id="mr62IHarm" type="button">♫ Simultáneas</button><button id="mr62IQuiz" type="button">? Adivina el intervalo</button><button id="mr62IReveal" type="button">Mostrar respuesta</button></div><div class="mr62-actions" id="mr75Answer" hidden><label>Tu respuesta<select id="mr75Guess"></select></label><button id="mr75Check" type="button">Comprobar</button></div><p id="mr62IInfo"></p><p id="mr62IStatus" aria-live="polite"></p>`;inter.appendChild(wrap);const opts=[['Unísono',0,0],['Segunda menor',1,1],['Segunda mayor',2,1],['Tercera menor',3,2],['Tercera mayor',4,2],['Cuarta justa',5,3],['Tritono',6,4],['Quinta justa',7,4],['Sexta menor',8,5],['Sexta mayor',9,5],['Séptima menor',10,6],['Séptima mayor',11,6],['Octava justa',12,7]];const root=$('mr62IRoot'),type=$('mr62IType');american.forEach((n,i)=>root.add(new Option(latin[i]+' / '+n,i)));opts.forEach((o,i)=>type.add(new Option(o[0],i)));type.value='7';
+const guess=$('mr75Guess'),practiceButton=$('mr75Practice'),status=$('mr62IStatus');
+guess.add(new Option('Elige un intervalo',''));
+opts.forEach((o,i)=>guess.add(new Option(o[0],i)));
+let quiz=false,practice=false,studyType=type.value;
+function setPractice(on){
+ if(on===practice)return;
+ if(on)studyType=type.value;else type.value=studyType;
+ practice=on;quiz=on;
+ practiceButton.textContent=on?'Salir de práctica':'Modo práctica';
+ practiceButton.setAttribute('aria-pressed',String(on));
+ $('mr75StudyType').hidden=on;
+ $('mr75Answer').hidden=!on;
+}
+function newInterval(){
+ setPractice(true);
+ const prev=+type.value;
+ type.value=(prev+1+Math.floor(Math.random()*(opts.length-1)))%opts.length;
+ guess.value='';quiz=true;status.textContent='';render();$('mr62IMel').click();
+}
+practiceButton.onclick=()=>{
+ if(!practice){newInterval();return}
+ setPractice(false);status.textContent='';render();
+};
+$('mr75Check').onclick=()=>{
+ if(guess.value===''){status.textContent='Elige tu respuesta.';return}
+ status.textContent=guess.value===type.value?'✓ Correcto.':'Prueba otra vez o pulsa Mostrar respuesta.';
+};
+function render(){const r=+root.value,o=opts[+type.value],svg=$('mr62IStaff');let lines=[42,57,72,87,102].map(y=>`<line x1="25" x2="295" y1="${y}" y2="${y}" stroke="#aec8e6"/>`).join('');const letters=[0,0,1,2,2,3,3,4,4,5,6,6],natural=[0,2,4,5,7,9,11];
  const rootLetter=letters[r],targetStep=rootLetter+o[2],targetLetter=targetStep%7,targetOct=4+Math.floor(targetStep/7);
  const y1=117-rootLetter*7.5,y2=117-targetStep*7.5;
  const accidental=(midi,letter,oct)=>{const delta=midi-(12*(oct+1)+natural[letter]);return delta===1?'♯':delta===-1?'♭':delta===2?'𝄪':delta===-2?'𝄫':''};
  const a1=accidental(60+r,rootLetter,4),a2=accidental(60+r+o[1],targetLetter,targetOct);
  const ledger=(x,y)=>{let z='';if(y>=117)for(let yy=117;yy<=y+1;yy+=15)z+=`<line x1="${x-18}" x2="${x+18}" y1="${yy}" y2="${yy}" stroke="#aec8e6"/>`;if(y<=27)for(let yy=27;yy>=y-1;yy-=15)z+=`<line x1="${x-18}" x2="${x+18}" y1="${yy}" y2="${yy}" stroke="#aec8e6"/>`;return z};
- svg.innerHTML=lines+`<text x="31" y="100" fill="#fff" font-size="36">𝄞</text>${ledger(130,y1)}${ledger(228,y2)}<text x="104" y="${y1+5}" fill="#fff" font-size="23">${a1}</text><text x="201" y="${y2+5}" fill="#fff" font-size="23">${a2}</text><ellipse cx="130" cy="${y1}" rx="11" ry="7" fill="#69b8ff" transform="rotate(-20 130 ${y1})"/><ellipse cx="228" cy="${y2}" rx="11" ry="7" fill="#53d79c" transform="rotate(-20 228 ${y2})"/>`; $('mr62IInfo').textContent=quiz?'Escucha e intenta identificar el intervalo antes de mostrar la respuesta.':o[0]+' · '+o[1]+' semitonos · '+name(r)+' → '+name(r+o[1]);}root.onchange=()=>{quiz=false;render()};type.onchange=()=>{quiz=false;render()};$('mr62IMel').onclick=()=>{const r=+root.value,o=opts[+type.value];tone(60+r,.7);tone(60+r+o[1],.7,.85)};$('mr62IHarm').onclick=()=>{const r=+root.value,o=opts[+type.value];tone(60+r,1);tone(60+r+o[1],1)};$('mr62IQuiz').onclick=()=>{type.value=Math.floor(Math.random()*opts.length);quiz=true;render();$('mr62IMel').click();$('mr62IStatus').textContent='Escucha las notas. ¿Qué intervalo es?'};$('mr62IReveal').onclick=()=>{quiz=false;render();$('mr62IStatus').textContent='Respuesta: '+opts[+type.value][0]};render()}
+ svg.innerHTML=lines+`<text x="31" y="100" fill="#fff" font-size="36">𝄞</text>${ledger(130,y1)}${ledger(228,y2)}<text x="104" y="${y1+5}" fill="#fff" font-size="23">${a1}</text><text x="201" y="${y2+5}" fill="#fff" font-size="23">${a2}</text><ellipse cx="130" cy="${y1}" rx="11" ry="7" fill="#69b8ff" transform="rotate(-20 130 ${y1})"/><ellipse cx="228" cy="${y2}" rx="11" ry="7" fill="#53d79c" transform="rotate(-20 228 ${y2})"/>`; $('mr62IInfo').textContent=quiz?'Escucha las notas y comprueba tu respuesta.':o[0]+' · '+o[1]+' semitonos · '+name(r)+' → '+name(r+o[1]);}root.onchange=()=>{quiz=practice;guess.value='';status.textContent='';render()};type.onchange=()=>{quiz=false;render()};$('mr62IMel').onclick=()=>{const r=+root.value,o=opts[+type.value];tone(60+r,.7);tone(60+r+o[1],.7,.85)};$('mr62IHarm').onclick=()=>{const r=+root.value,o=opts[+type.value];tone(60+r,1);tone(60+r+o[1],1)};$('mr62IQuiz').onclick=newInterval;$('mr62IReveal').onclick=()=>{quiz=false;render();status.textContent='Respuesta: '+opts[+type.value][0]};render()}
 // Rhythm: keep the proven rhythmic staff, BPM, playback and independent metronome.
 // Remove only the second, redundant musical-figures card; the existing staff-based figure selector remains.
 const rhythm=$('mr2220Rhythm');if(rhythm){const note=document.createElement('p');note.id='mr62RhythmLesson';note.innerHTML='<b>Lectura rítmica:</b> el compás agrupa pulsos; el pentagrama muestra las figuras y el pulso iluminado. En 2/4, 3/4 y 4/4, la negra suele ser la unidad del BPM. En 6/8, el pulso principal suele ser la negra con puntillo, agrupando seis corcheas en dos grupos de tres. Selecciona una figura debajo del pentagrama para ver su duración y escucharla.';rhythm.insertBefore(note,rhythm.querySelector('#mrRhBeats'));const duplicate=document.querySelector('#mr2220Rhythm .mr-rhythm-figure-guide');if(duplicate)duplicate.classList.add('mr62-hide-duplicate')}
@@ -2902,9 +2938,26 @@ const rhythm=$('mr2220Rhythm');if(rhythm){const note=document.createElement('p')
 (()=>{'use strict';
 const $=id=>document.getElementById(id);
 // A shared WebAudio context, unlocked synchronously by a direct user tap.
-let ctx=null,active=[],harmonyEnd;
+let ctx=null,active=[],harmonyEnd,highlightFrame=0,highlighted=null;
 function audio(){const AC=window.AudioContext||window.webkitAudioContext;if(!AC)throw Error('Audio no disponible');ctx=mrPlayback();if(ctx.state==='suspended')ctx.resume().catch(()=>{});return ctx}
-function stop(){clearTimeout(harmonyEnd);for(const o of active){try{o.stop()}catch(e){}}active=[]}
+function highlight(nodes,start,step,length,offset=0){
+ function update(){
+  const elapsed=ctx.currentTime-start-offset;
+  const index=Math.floor(elapsed/step);
+  const node=elapsed>=0&&elapsed-index*step<length?nodes[index]:null;
+  if(node!==highlighted){
+   highlighted?.classList.remove('mr75Playing');highlighted=node;
+   highlighted?.classList.add('mr75Playing');
+  }
+  if(elapsed<nodes.length*step&&nodes[0]?.isConnected&&!nodes[0].closest('[hidden]')){
+   highlightFrame=requestAnimationFrame(update);
+  }else{
+   highlighted?.classList.remove('mr75Playing');highlighted=null;
+  }
+ }
+ update();
+}
+function stop(){cancelAnimationFrame(highlightFrame);highlighted?.classList.remove('mr75Playing');highlighted=null;clearTimeout(harmonyEnd);for(const o of active){try{o.stop()}catch(e){}}active=[]}
 function guitar(midi,when,length=.95,level=.18){
  const c=audio(),start=c.currentTime+Math.max(0,when),freq=440*Math.pow(2,(midi-69)/12);
  const master=c.createGain(),filter=c.createBiquadFilter();filter.type='lowpass';filter.frequency.value=3000;
@@ -2919,10 +2972,10 @@ const play=$('mr62PlayAll');if(play){play.addEventListener('click',e=>{
  const steps=[0,2,4,5,7,9,11],qualities=[0,1,1,0,0,1,2];
  const progression=pattern.value==='custom'?chosen.map(b=>{const roman=b.textContent.split(' · ')[0];return ['I','ii','iii','IV','V','vi','vii°'].indexOf(roman)}):pattern.value.split(',').map(Number);
  if(!progression.length||progression.some(i=>i<0)){ $('mr62HStatus').textContent='Selecciona primero los acordes de la progresión.';return }
- try{const root=Number(keys.value),c=audio();progression.forEach((degree,j)=>{
+ try{const root=Number(keys.value),c=audio(),start=c.currentTime;progression.forEach((degree,j)=>{
  const pc=(root+steps[degree])%12,base=48+pc,third=qualities[degree]===0?4:3,fifth=qualities[degree]===2?6:7;
  mrHarmonyVoicing(pc,[0,third,fifth,12],base).forEach((m,k)=>guitar(m,j*1.45+k*.045,1.1,.115));
- });$('mr62HStatus').textContent='♪ Reproduciendo '+progression.length+' acordes. Pulsa Detener para interrumpir.';
+ });highlight(chosen,start,1.45,1.30);$('mr62HStatus').textContent='♪ Reproduciendo '+progression.length+' acordes. Pulsa Detener para interrumpir.';
  harmonyEnd=setTimeout(()=>{$('mr62HStatus').textContent='Progresión completada'},progression.length*1450);
  }catch(err){$('mr62HStatus').textContent='No se pudo iniciar el audio: '+err.message}
  },true)}
@@ -2934,9 +2987,22 @@ document.addEventListener('click',e=>{const b=e.target.closest('#mr61CircleHear'
  e.stopImmediatePropagation();stop();try{
  const panel=b.closest('#mrTheoryLab');const title=panel?.querySelector('.mr21summary strong')?.textContent||'';
  const name=title.split(' mayor')[0].trim(),root=Number(b.dataset.root);
- [0,2,4,5,7,9,11,12].forEach((v,i)=>guitar(60+root+v,i*.35,.34,.22));
- const status=panel?.querySelector('#mr61CircleStatus');if(status)status.textContent=' ♪ Reproduciendo '+name+' mayor';
+ const start=audio().currentTime,scale=[0,2,4,5,7,9,11],offset=3.05,step=.82;
+ [...scale,12].forEach((v,i)=>guitar(60+root+v,i*.35,.34,.22));
+ for(const [degree,v] of scale.entries()){
+  const third=[1,2,5,6].includes(degree)?3:4,fifth=degree===6?6:7;
+  [0,third,fifth].forEach((interval,i)=>guitar(48+(root+v)%12+interval,offset+degree*step+i*.035,.68,.115));
+ }
+ highlight([...panel.querySelectorAll('.mr21pills span')],start,step,.75,offset);
+ const status=panel.querySelector('#mr61CircleStatus');if(status)status.textContent='♪ Escala y acordes de '+name+' mayor';
  }catch(err){const status=b.parentElement.querySelector('#mr61CircleStatus');if(status)status.textContent=' Audio no disponible: '+err.message}
+},true);
+$('mrTheoryLab')?.addEventListener('click',e=>{if(e.target.closest('[data-key],[data-tab]'))stop()});
+$('mrLearningDock')?.addEventListener('click',e=>{if(e.target.closest('button'))stop()});
+$('mr62Clear')?.addEventListener('click',stop,true);
+$('mr62Chosen')?.addEventListener('click',e=>{
+ const button=e.target.closest('button');if(!button)return;
+ stop();const context=audio();highlight([button],context.currentTime,1.15,1.15);
 },true);
 // Theory in Intervals: quality is a distance, not a musical accidental.
 const inter=$('mr62Intervals');if(inter){const p=document.createElement('div');p.className='mr63Theory';p.innerHTML='<b>¿Mayor, menor, justo o tritono?</b> Un intervalo indica la distancia entre dos notas. Las segundas, terceras, sextas y séptimas pueden ser mayores o menores: el menor tiene un semitono menos que el mayor del mismo número. Las cuartas, quintas y octavas pueden ser justas. El tritono abarca seis semitonos: por ejemplo DO–FA♯ (cuarta aumentada) o DO–SOL♭ (quinta disminuida). <b>♯ sostenido</b> sube un semitono; <b>♭ bemol</b> baja un semitono: son símbolos diferentes, no el mismo símbolo inclinado. Ninguno significa por sí solo «intervalo menor».';inter.insertBefore(p,$('mr62IStaff'));
@@ -3136,16 +3202,76 @@ function scoreFragments(){
   let remain=item.dur;
   while(remain>0){
    const room=units-(cursor%units);
-   const dur=[4,2,1,.5,.25].find(value=>value<=Math.min(room,remain));
+   const dur=[4,3,2,1.5,1,.75,.5,.25].find(value=>value<=Math.min(room,remain));
    result.push({index,midis:item.midis,dur,tied:remain>dur,bar:cursor>0&&cursor%units===0});
    remain-=dur;cursor+=dur;
   }
  }
  return result;
 }
-function draw(){const svg=$('mr67Staff'),clef=$('mr67Clef').value;let out='';const ylines=[45,65,85,105,125];const total=sequence.reduce((n,x)=>n+x.dur,0),bars=Math.max(1,Math.ceil(total/meterUnits()));const fragments=scoreFragments(),width=Math.max(720,160+fragments.length*76+bars*12);svg.style.minWidth=Math.round(width*2/3)+'px';const top=clef==='bass'?-195:-50,bottom=clef==='treble'?220:165;svg.setAttribute('viewBox',`0 ${top} ${width} ${bottom-top}`);for(const y of ylines)out+=`<line x1="22" x2="${width-18}" y1="${y}" y2="${y}" stroke="#a5c8e8"/>`;out+=`<text x="30" y="116" font-size="57" fill="white">${clef==='treble'?'𝄞':'𝄢'}</text><text x="88" y="81" fill="white" font-size="22">${$('mr67Meter').value.replace('/','⁄')}</text>`;
- let count=0,x=138;const nat=[0,2,4,5,7,9,11];function pos(m){const base=clef==='treble'?64:43;const diatonic=n=>{let o=Math.floor(n/12)-1,p=n%12,idx=nat.indexOf(p);if(idx<0)idx=nat.findIndex(v=>v>p)-([3,10].includes(p)?0:1);if(idx<0){idx=0;o++}return o*7+idx};return 125-(diatonic(m)-diatonic(base))*10}
- for(const item of fragments){if(item.bar){out+=`<line x1="${x-17}" x2="${x-17}" y1="45" y2="125" stroke="#e4f3ff"/>`;x+=12}out+=`<g data-score-event="${item.index}" class="${selectedEvents.has(item.index)?'selected':''}"><rect x="${x-24}" y="${top}" width="51" height="${bottom-top}" fill="transparent"/>`;for(const m of item.midis){const y=pos(m),open=item.dur>=2;out+=`<ellipse cx="${x}" cy="${y}" rx="10" ry="7" transform="rotate(-20 ${x} ${y})" fill="${open?'#0b2340':'#83c7ff'}" stroke="#b8e6ff" stroke-width="2"/>`;if(item.dur<4)out+=`<line x1="${x+9}" x2="${x+9}" y1="${y}" y2="${y-36}" stroke="#cce6ff" stroke-width="2"/>`;if(item.dur<1)out+=`<path d="M${x+9} ${y-36}q20 8 8 25" stroke="#cce6ff" fill="none" stroke-width="2"/>`;if(item.dur<.5)out+=`<path d="M${x+9} ${y-26}q20 8 8 25" stroke="#cce6ff" fill="none" stroke-width="2"/>`;if(y>125||y<45){for(let ly=y>125?145:25;y>125?ly<=y:ly>=y;ly+=y>125?20:-20)out+=`<line x1="${x-16}" x2="${x+16}" y1="${ly}" y2="${ly}" stroke="#8aaccb"/>`;}if(item.tied)out+=`<path d="M${x+7} ${y+10} Q${x+37} ${y+28} ${x+((count+item.dur)%meterUnits()===0?82:70)} ${y+10}" fill="none" stroke="#b8e6ff"/>`;const pc=m%12;if(!nat.includes(pc))out+=`<text x="${x-22}" y="${y+5}" fill="#f5d88b" font-size="16">${[3,10].includes(pc)?'♭':'♯'}</text>`;}out+='</g>';count+=item.dur;x+=76}svg.innerHTML=out;drawEdits();$('mr67Sequence').textContent=sequence.length?`${sequence.length} elemento(s) · ${total} negras de duración · ${bars} compás(es) aproximadamente`:'Tu pentagrama está vacío.'}
+function draw(){const svg=$('mr67Staff'),clef=$('mr67Clef').value;let out='';const ylines=[45,65,85,105,125];const total=sequence.reduce((n,x)=>n+x.dur,0),bars=Math.max(1,Math.ceil(total/meterUnits()));const fragments=scoreFragments(),width=Math.max(720,160+fragments.length*76+bars*12);for(const y of ylines)out+=`<line x1="22" x2="${width-18}" y1="${y}" y2="${y}" stroke="#a5c8e8"/>`;out+=`<text x="30" y="116" font-size="57" fill="white">${clef==='treble'?'𝄞':'𝄢'}</text><text x="88" y="81" fill="white" font-size="22">${$('mr67Meter').value.replace('/','⁄')}</text>`;
+ let count=0,x=138;
+ const natural=[0,2,4,5,7,9,11],base=clef==='treble'?37:25;
+ const accidentals=new Map();
+ function position(midi,label){
+  const pc=midi%12,octave=Math.floor(midi/12);
+  let letter=natural.indexOf(pc);
+  if(letter<0){
+   const match=label?.match(/^([A-G])([#♯b♭]?)(m|7|maj7|m7)?$/);
+   const rootLetter=match?'CDEFGAB'.indexOf(match[1]):-1;
+   const rootPc=rootLetter<0?-1:(natural[rootLetter]+(/[b♭]/.test(match[2])?-1:match[2]?1:0)+12)%12;
+   const interval=(pc-rootPc+12)%12;
+   const degree={0:0,3:2,4:2,6:4,7:4,10:6,11:6}[interval];
+   const spelling=rootLetter>=0&&degree!==undefined?(rootLetter+degree)%7:-1;
+   const useFlat=spelling>=0?natural[spelling]>pc:[3,10].includes(pc);
+   letter=natural.findIndex(n=>n>pc)-(useFlat?0:1);
+  }
+  return {y:125-(octave*7+letter-base)*10,delta:pc-natural[letter]};
+ }
+ // Leave room for stems, flags, ledger lines, accidentals and ties around the extreme pitches.
+ let top=-15,bottom=184;
+ for(const event of sequence){
+  for(const midi of event.midis){
+   const {y}=position(midi,event.label);
+   top=Math.min(top,y-54);bottom=Math.max(bottom,y+54);
+  }
+ }
+ const height=bottom-top;
+ const scale=Math.max(.82,200/height);
+ svg.setAttribute('viewBox',`0 ${top} ${width} ${height}`);
+ svg.setAttribute('preserveAspectRatio','xMinYMid meet');
+ svg.style.width=Math.ceil(width*scale)+'px';
+ svg.style.height=Math.ceil(height*scale)+'px';
+ for(const item of fragments){
+  if(item.bar){out+=`<line x1="${x-17}" x2="${x-17}" y1="45" y2="125" stroke="#e4f3ff"/>`;x+=12;accidentals.clear()}
+  const event=sequence[item.index];
+  const heads=item.midis.map(m=>position(m,event.label)).sort((a,b)=>a.y-b.y);
+  const high=heads[0].y,low=heads.at(-1).y,up=(high+low)/2>=85;
+  const dotted=[.75,1.5,3].includes(item.dur),figure=dotted?item.dur/1.5:item.dur;
+  const steps=new Set();
+  for(const {y} of heads){
+   if(y>125)for(let line=145;line<=y;line+=20)steps.add(line);
+   if(y<45)for(let line=25;line>=y;line-=20)steps.add(line);
+  }
+  out+=`<g data-score-event="${item.index}" class="${selectedEvents.has(item.index)?'selected':''}"><rect x="${x-30}" y="${top}" width="62" height="${bottom-top}" fill="transparent"/>`;
+  for(const y of steps)out+=`<line x1="${x-16}" x2="${x+16}" y1="${y}" y2="${y}" stroke="#8aaccb"/>`;
+  for(const {y,delta} of heads){
+   out+=`<ellipse cx="${x}" cy="${y}" rx="10" ry="7" transform="rotate(-20 ${x} ${y})" fill="${figure>=2?'#0b2340':'#83c7ff'}" stroke="#b8e6ff" stroke-width="2"/>`;
+   if(dotted)out+=`<circle cx="${x+17}" cy="${(y-45)%20===0?y-5:y}" r="2.7" fill="#b8e6ff"/>`;
+   if(item.tied)out+=`<path d="M${x+7} ${y+10} Q${x+37} ${y+28} ${x+((count+item.dur)%meterUnits()===0?82:70)} ${y+10}" fill="none" stroke="#b8e6ff"/>`;
+   const previous=accidentals.get(y)||0;
+   if(previous!==delta){out+=`<text x="${x-23}" y="${y+5}" fill="#f5d88b" font-size="16">${delta===0?'♮':delta<0?'♭':'♯'}</text>`;accidentals.set(y,delta)}
+  }
+  if(figure<4){
+   const stemX=x+(up?9:-9),tip=up?high-35:low+35,foot=up?low:high,direction=up?1:-1;
+   out+=`<path d="M${stemX} ${foot}V${tip}" stroke="#cce6ff" stroke-width="2"/>`;
+   for(let n=0;n<(figure<.5?2:figure<1?1:0);n++){
+    out+=`<path d="M${stemX} ${tip+n*9*direction}q20 ${7*direction} 8 ${24*direction}" stroke="#cce6ff" fill="none" stroke-width="2"/>`;
+   }
+  }
+  out+='</g>';count+=item.dur;x+=76;
+ }
+ svg.innerHTML=out;drawEdits();$('mr67Sequence').textContent=sequence.length?`${sequence.length} elemento(s) · ${total} negras de duración · ${bars} compás(es) aproximadamente`:'Tu pentagrama está vacío.'}
 function drawEdits(){
  const list=$('mr73Events');list.replaceChildren();
  sequence.forEach((item,index)=>{
@@ -3167,7 +3293,22 @@ function toggle(index){
 function add(midis,label){
  stop();sequence.push({midis,dur:duration(),label});draw();
 }
-c.addEventListener('mr-recorded-chord',event=>add(event.detail.midis,event.detail.label));
+c.addEventListener('mr75CaptureScore',event=>{
+ const take=event.detail;
+ if(!take.item){stop();take.item={midis:take.midis,dur:take.duration,label:take.label};sequence.push(take.item)}
+ else{
+  if(!sequence.includes(take.item)||take.item.dur===take.duration)return;
+  take.item.dur=take.duration;
+ }
+ draw();
+ const last=[...scoreStaff.querySelectorAll('[data-score-event]')].at(-1);
+ const box=scoreStaff.parentElement;
+ if(last){
+  const rect=last.getBoundingClientRect(),view=box.getBoundingClientRect();
+  if(rect.right>view.right-12)box.scrollLeft+=rect.right-view.right+18;
+  if(view.bottom>innerHeight||view.top<0)box.scrollIntoView({block:'nearest'});
+ }
+});
 $('mr73Delete').onclick=()=>{
  stop();sequence=sequence.filter((item,index)=>!selectedEvents.has(index));selectedEvents.clear();draw();
 };
@@ -3193,7 +3334,7 @@ scoreStaff.addEventListener('click',event=>{
  if(midi<40||midi>88)return;
  pitches.value=String(midi);add([midi]);
 });$('mr67AddNote').onclick=()=>add([Number(pitches.value)]);$('mr67AddChord').onclick=()=>{const val=chords.value,pc=Number(val.slice(0,-1)),minor=val.endsWith('m'),base=48+pc;add([base,base+(minor?3:4),base+7])};$('mr67Undo').onclick=()=>{stop();sequence.pop();selectedEvents.delete(sequence.length);draw()};$('mr67Clear').onclick=()=>{stop();sequence=[];selectedEvents.clear();draw()};for(const id of ['mr67Clef','mr67Meter'])$(id).addEventListener('change',draw);
-$('mr67Play').onclick=()=>{c.dispatchEvent(new Event('mr-stop-transcription'));stop();if(!sequence.length){$('mr67Status').textContent='Añade una nota o acorde primero.';return}try{audio=mrPlayback();audio.resume();const bpm=Math.min(240,Math.max(40,Number($('mr67Bpm').value)||90)),quarter=60/bpm*($('mr67Meter').value==='6/8'?2/3:1);let offset=0;const start=audio.currentTime+.05;for(const [idx,item] of sequence.entries()){for(const m of item.midis){const t=start+offset,o=audio.createOscillator(),g=audio.createGain();o.type='triangle';o.frequency.value=440*Math.pow(2,(m-69)/12);g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(.11/Math.sqrt(item.midis.length),t+.025);g.gain.exponentialRampToValueAtTime(.0001,t+Math.max(.09,item.dur*quarter*.91));o.connect(g).connect(mrPlaybackBus(audio));o.start(t);o.stop(t+Math.max(.1,item.dur*quarter*.92));voices.add(o);o.onended=()=>voices.delete(o)}timers.push(setTimeout(()=>{$('mr67Status').textContent='Reproduciendo elemento '+(idx+1)+' de '+sequence.length;markPlaying(idx)},(offset+.05)*1000));offset+=item.dur*quarter}timers.push(setTimeout(()=>{markPlaying(-1);$('mr67Status').textContent='Composición terminada'},offset*1000+100));}catch(e){$('mr67Status').textContent='No se pudo activar el audio en este navegador.'}};$('mr67Stop').onclick=stop;
+$('mr67Play').onclick=()=>{c.dispatchEvent(new Event('mr-stop-transcription'));stop();if(!sequence.length){$('mr67Status').textContent='Añade una nota o acorde primero.';return}try{audio=mrPlayback();audio.resume();const bpm=Math.min(240,Math.max(40,Number($('mr67Bpm').value)||90)),quarter=60/bpm*($('mr67Meter').value==='6/8'?2/3:1);let offset=0;const start=audio.currentTime+.05;for(const [idx,item] of sequence.entries()){for(const m of item.midis){const t=start+offset,length=item.dur*quarter,o=audio.createOscillator(),g=audio.createGain();o.type='triangle';o.frequency.value=440*Math.pow(2,(m-69)/12);g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(.11/Math.sqrt(item.midis.length),t+Math.min(.025,length*.2));g.gain.exponentialRampToValueAtTime(.0001,t+length*.95);o.connect(g).connect(mrPlaybackBus(audio));o.start(t);o.stop(t+length);voices.add(o);o.onended=()=>voices.delete(o)}timers.push(setTimeout(()=>{$('mr67Status').textContent='Reproduciendo elemento '+(idx+1)+' de '+sequence.length;markPlaying(idx)},(offset+.05)*1000));offset+=item.dur*quarter}timers.push(setTimeout(()=>{markPlaying(-1);$('mr67Status').textContent='Composición terminada'},offset*1000+100));}catch(e){$('mr67Status').textContent='No se pudo activar el audio en este navegador.'}};$('mr67Stop').onclick=stop;
 b.addEventListener('click',()=>{
  document.body.classList.remove('mr-theory-active');
  document.body.classList.add('mr-score-writing');
@@ -3202,6 +3343,7 @@ b.addEventListener('click',()=>{
  $('mrTheoryLab').hidden=true;
  panel.style.display='';
  window.mrSelectPracticeModule(b.id);
+ title('COMPOSICIÓN MUSICAL','Escribe, transcribe y escucha tu partitura.','🎓 ACADEMIA INTERACTIVA');
  c.scrollIntoView({block:'start',behavior:'smooth'});
 });
 function leave(){
@@ -3221,7 +3363,7 @@ const mrGuitarChordVoicings=CHORDS.map(chord=>{
  const midis=chord.shape.flatMap((fret,string)=>fret<0?[]:[OPEN[string]+fret]);
  return {label:chord.sym,midis,frequencies:midis.map(midi=>440*2**((midi-69)/12))};
 });
-function mrRecognizeGuitarChord({bins,step}){
+function mrRecognizeGuitarChord({bins,step},voicings=mrGuitarChordVoicings){
  const peaks=[];
  for(let index=Math.ceil(75/step);index<Math.min(bins.length-1,Math.floor(1500/step));index++){
   const level=bins[index];
@@ -3238,7 +3380,7 @@ function mrRecognizeGuitarChord({bins,step}){
  const total=evidence.reduce((sum,peak)=>sum+peak.weight,0);
  const same=(a,b)=>Math.abs(a-b)<Math.max(step*.85,b*.009);
  let best=null,second=null;
- for(const voicing of mrGuitarChordVoicings){
+ for(const voicing of voicings){
   const classes=new Set();let onsets=0;
   for(const [index,freq] of voicing.frequencies.entries()){
    const peak=evidence.find(p=>same(p.hz,freq));
@@ -3270,63 +3412,101 @@ function mrRecognizeGuitarChord({bins,step}){
  const wrap=document.createElement('div');wrap.id='mr68Transcribe';
  wrap.style.cssText='margin:20px 0;padding:18px;border:1px solid #5188c1;border-radius:16px;background:#102b4b';
  wrap.innerHTML=`<h4 style="margin:0 0 10px">🎙️ Tocar y escribir en pentagrama</h4>
- <p>Toca una nota o rasguea un acorde. Cada detección estable se escribe con la figura elegida.</p><label>Capturar <select id="mr73Capture"><option value="notes">Notas individuales</option><option value="chords">Acordes de guitarra</option></select></label>
+ <p>Toca una nota o rasguea un acorde. La figura se estima por la duración del sonido y el tempo indicado.</p><label>Capturar <select id="mr73Capture"><option value="auto">Automático · notas y acordes</option><option value="notes">Notas individuales</option><option value="chords">Acordes de guitarra</option></select></label>
  <div style="display:flex;flex-wrap:wrap;gap:10px;margin:12px 0"><button type="button" id="mr68Start">🎙️ Iniciar transcripción</button><button type="button" id="mr68Stop" disabled>■ Detener transcripción</button></div>
  <p id="mr68Detected" role="status" aria-live="polite">Transcripción detenida.</p>
- <p style="font-size:.86em;opacity:.86">Para los acordes, rasguea una posición conocida y deja que suene. Se escribe la digitación sugerida. Para repetir el mismo acorde o nota, deja un silencio breve entre ataques.</p>`;
+ <p style="font-size:.86em;opacity:.86">Para los acordes, rasguea una posición conocida y deja que suene. Se escribe la digitación sugerida. Para repetir la misma nota o acorde, articula bien el ataque o deja un silencio breve.</p>`;
  const staff=host.querySelector('.mr67staff');staff?.before(wrap);
- let recording=false,lastMidi=null,stable=0,armed=true,lastTime=0,chordTimer;
- const capture=$('mr73Capture');
- let chordCandidate='',chordFrames=0,lastChord='',quietFrames=0;
- function resetChord(){chordCandidate='';chordFrames=0;lastChord='';quietFrames=0}
- capture.onchange=()=>{resetChord();armed=true;lastMidi=null;stable=0;
-  if(capture.value==='notes')window.mrSharedMic.stopChordSpectrum();
- };
- function pollChord(){
-  if(!recording||host.hidden||capture.value!=='chords')return;
-  const spectrum=window.mrSharedMic.chordSpectrum();
-  if(!spectrum)return;
-  const result=mrRecognizeGuitarChord(spectrum);
-  if(!result){
-   chordCandidate='';chordFrames=0;
-   if(++quietFrames>=3)lastChord='';
-   return;
-  }
-  quietFrames=0;
-  if(result.label!==chordCandidate){chordCandidate=result.label;chordFrames=0}
-  if(++chordFrames<3||result.label===lastChord)return;
-  lastChord=result.label;
-  host.dispatchEvent(new CustomEvent('mr-recorded-chord',{detail:result}));
-  $('mr68Detected').textContent='✓ '+result.label+' añadido al pentagrama';
+ let recording=false,pending=false,timer,levelPeak=0,lastLevel=0,attack=0,activity=0,take=null,pitchCandidate=null,chordCandidate=null,chordCount=0;
+ const capture=$('mr73Capture'),mic=window.mrSharedMic;
+ const figures=[.25,.5,.75,1,1.5,2,3,4,6,8,12,16];
+ const quarter=()=>60000/Math.max(40,Math.min(240,Number($('mr67Bpm').value)||90))*($('mr67Meter').value==='6/8'?2/3:1);
+ function write(record,now){
+  const beats=Math.max(0,now-record.start)/record.quarter;
+  record.duration=figures.reduce((nearest,value)=>Math.abs(value-beats)<Math.abs(nearest-beats)?value:nearest);
+  host.dispatchEvent(new CustomEvent('mr75CaptureScore',{detail:record}));
  }
- host.addEventListener('mr-stop-transcription',()=>{if(recording)stop()});
- function stop(){recording=false;clearInterval(chordTimer);window.mrSharedMic.stopChordSpectrum();resetChord();armed=true;stable=0;lastMidi=null;$('mr68Start').disabled=false;$('mr68Stop').disabled=true;$('mr68Detected').textContent='Transcripción detenida. Puedes escuchar o editar la composición.'}
- $('mr68Start').addEventListener('click',async()=>{
-   $('mr68Start').disabled=true;
-   if(!await window.mrSharedMic.start()||host.hidden){
-    $('mr68Start').disabled=false;$('mr68Detected').textContent=$('micStatus').textContent;return;
+ function closeTake(now){
+  if(take)write(take,now);
+  take=null;pitchCandidate=null;chordCandidate=null;chordCount=0;attack=0;
+ }
+ function commit(midis,label,start,now){
+  if(take?.label===label)return;
+  if(take)closeTake(start);
+  take={midis,label,start,quarter:quarter()};
+  write(take,now);
+  $('mr68Detected').textContent='✓ '+label+' · duración según el tempo';
+ }
+ function poll(){
+  if(!recording||host.hidden)return;
+  const now=performance.now(),level=mic.compositionLevel();
+  const threshold=Math.max(.006,levelPeak*.07);
+  if(level<threshold){
+   if(attack&&now-activity>115){closeTake(activity);levelPeak=0}
+   lastLevel=level;return;
+  }
+  if(!attack)attack=now;
+  else if(take&&now-attack>240&&level>Math.max(.014,lastLevel*2.4,levelPeak*.53)){
+   closeTake(now);attack=now;levelPeak=0;
+  }
+  activity=now;lastLevel=level;levelPeak=Math.max(level,levelPeak*.998);
+  const mode=capture.value;
+  if(mode!=='notes'){
+   const spectrum=mic.chordSpectrum(),result=spectrum&&mrRecognizeGuitarChord(spectrum);
+   if(!result){chordCandidate=null;chordCount=0}
+   else{
+    if(chordCandidate!==result.label){chordCandidate=result.label;chordCount=0}
+    if(++chordCount>=2&&now-attack>=125){
+     const start=take?Math.max(attack,now-145):attack;
+     commit(result.midis,result.label,start,now);
+    }
    }
-   recording=true;armed=true;stable=0;lastMidi=null;resetChord();$('mr68Stop').disabled=false;
-   chordTimer=setInterval(pollChord,85);
-   $('mr68Detected').textContent='Escuchando… toca tu guitarra.';
-
- });
- $('mr68Stop').addEventListener('click',stop);
- new MutationObserver(()=>{if(host.hidden&&recording)stop()}).observe(host,{attributes:true,attributeFilter:['hidden']});
- window.addEventListener('gm-pitch-release',()=>{armed=true;stable=0;lastMidi=null});
+  }
+  if(mode!=='chords'&&pitchCandidate&&now-pitchCandidate.start>=(mode==='auto'?200:70)&&now-pitchCandidate.last<100){
+   const {midi,start}=pitchCandidate;
+   // In automatic mode a sustained chord takes priority over its strongest string.
+   if(mode==='notes'||(!chordCandidate&&(!take||take.midis.length===1))){
+    commit([midi],GM212.name(midi,true),take?start:attack,now);
+   }
+  }
+  if(take)write(take,now);
+ }
+ function stop(){
+  if(recording)closeTake(activity||performance.now());
+  recording=false;pending=false;clearInterval(timer);
+  mic.stopChordSpectrum();mic.monitorComposition(false);
+  $('mr68Start').disabled=false;$('mr68Stop').disabled=true;
+  $('mr68Detected').textContent='Transcripción detenida. Puedes escuchar o editar la composición.';
+ }
+ capture.onchange=()=>{
+  if(recording)closeTake(activity||performance.now());
+  mic.stopChordSpectrum();levelPeak=0;lastLevel=0;
+ };
+ host.addEventListener('mr-stop-transcription',()=>{if(recording||pending)stop()});
+ $('mr68Start').onclick=async()=>{
+  pending=true;$('mr68Start').disabled=true;
+  const ready=await mic.start();
+  if(!pending)return;
+  pending=false;
+  if(!ready||host.hidden){
+   $('mr68Start').disabled=false;$('mr68Detected').textContent=$('micStatus').textContent;return;
+  }
+  recording=true;levelPeak=0;lastLevel=0;attack=0;activity=0;mic.monitorComposition(true);
+  $('mr68Stop').disabled=false;timer=setInterval(poll,60);
+  $('mr68Detected').textContent='Escuchando… toca tu guitarra al tempo indicado.';
+ };
+ $('mr68Stop').onclick=stop;
+ new MutationObserver(()=>{if(host.hidden&&(recording||pending))stop()}).observe(host,{attributes:true,attributeFilter:['hidden']});
  window.addEventListener('mr-mic-state',e=>{if(e.detail?.active===false&&recording)stop()});
  window.addEventListener('gm-pitch',e=>{
-  if(!recording||host.hidden||capture.value!=='notes')return;
-  const midi=Math.round(Number(e.detail?.midi));if(!Number.isFinite(midi))return;
-  const now=performance.now();if(midi!==lastMidi){lastMidi=midi;stable=1;lastTime=now;armed=true;return}
-  stable++;if(!armed||stable<3||now-lastTime<100)return;
-  if(midi<40||midi>88){$('mr68Detected').textContent='Nota fuera del rango del editor (MI2 a MI6).';armed=false;return}
-  armed=false;
-  $('mr67Pitch').value=String(midi);
-  $('mr67AddNote').click();
-  const names=['DO','DO♯','RE','MI♭','MI','FA','FA♯','SOL','SOL♯','LA','SI♭','SI'];
-  $('mr68Detected').textContent='✓ '+names[midi%12]+(Math.floor(midi/12)-1)+' escrita. Para repetir la misma altura, deja un silencio breve.';
+  if(!recording||host.hidden||capture.value==='chords')return;
+  const midi=Math.round(Number(e.detail?.midi));
+  if(!Number.isFinite(midi)||midi<40||midi>88)return;
+  const now=performance.now();
+  if(pitchCandidate?.midi===midi){pitchCandidate.last=now;return}
+  pitchCandidate={midi,start:now,last:now};
  });
+
 })();
 </script>
 
@@ -3408,14 +3588,13 @@ body[data-section="home"] #homeScreen #mr65HomeMetro:not([hidden]) #gmMetro:not(
 #mrRhFigurePanel .mrRhFigureActions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 #mrRhFigurePanel .mrRhFigureActions button{min-width:0;min-height:44px}
 #mr67Staff{cursor:crosshair;touch-action:pan-x pan-y}
-#mr67Compose .mr67staff{block-size:clamp(220px,43vw,300px)}
-#mr67Compose .mr67staff svg{height:100%;max-height:none}
+#mr67Compose .mr67staff{overflow-x:auto}
+#mr67Compose .mr67staff svg{display:block;max-width:none;max-height:none}
 :is(#gmMetroStatus,#gmTapInfo,#gmPracticeInfo,#micDetails,#micStatus,#micPosition,#mr43NearNote,#mr43MicState,#mr44GameStatus,#mr45Status,#mr45Heard,#mr52TabSoundInfo,#mr61CircleStatus,#mr62HStatus,#mr62IInfo,#mr62IStatus,#mrIntInfo,#mrHarExplain,#mrRhFigureTime,#mr67Status,#mr67Sequence,#mr68Detected,#rdStatus,#rdNoteInfo,#rdMicState,#rdDescription,#rdResultLabel,#gmFigureInfo,#gmPracticeResult,#gmPracticeProgress,#mr55ScaleProgress,#mr46Countdown,#feedback,#hint){
  display:block;box-sizing:border-box;block-size:3lh;overflow-y:auto;overflow-wrap:anywhere;overscroll-behavior-y:contain
 }
 :is(#mr45Heard,#mr62IStatus,#mr61CircleStatus,#gmMetroStatus,#gmTapInfo){block-size:2lh}
 #mr62Harmony #mr62HStatus{min-block-size:0}
-#mr67Compose .mr67staff svg{width:auto;min-width:100%}
 #mr62Harmony #mr67PresetTip,#mr64Selected>p,#mr64Available>p{box-sizing:border-box;block-size:4lh;min-block-size:0;overflow-y:auto}
 #mr66Results{box-sizing:border-box;block-size:15lh;overflow-y:auto;overscroll-behavior-y:contain}
 body.mr-score-writing #workArea :is(.fretwrap,#noteExplorer,#chordExplorer,#scaleExplorer,#theoryExplorer,#mrTheoryCompact,#mrScaleSequence,#mr35NoteControls,#gmPractice,#mrTheoryLab){display:none!important}
@@ -3434,8 +3613,129 @@ body.mr-score-writing #workArea :is(.fretwrap,#noteExplorer,#chordExplorer,#scal
 #mr67Staff [data-score-event].playing rect{fill:#65baff30}
 #mr67Staff [data-score-event].playing ellipse{stroke:#fff09a;stroke-width:4}
 #mr67Compose[hidden]{display:none!important}
+#mr62Intervals [hidden]{display:none!important}
+#mr75Practice,#mr75Check,#mr75Guess{background:#245893;color:#fff;border:1px solid #75a9df;border-radius:9px;padding:8px;min-height:42px}
+#mr75Practice[aria-pressed="true"]{background:#126e72}
+#mr75Answer label{display:grid;min-width:0}
+#mr75Guess{width:100%;min-width:0}
+#mr62Harmony #mr62Chosen button.mr75Playing,#mrTheoryLab .mr21pills span.mr75Playing{background:#e4b74e!important;border-color:#ffe7a6!important;color:#071a33!important}
 </style>
 <script>
 document.getElementById('mr62HStatus')?.removeAttribute('aria-hidden');
-</script></body></html>
+</script><style id="mr77-responsive-and-listen">
+/* The game panel occupies the full grid when its old sidebar is hidden. */
+@media (min-width:901px){
+ body[data-section="game"] .layout{grid-template-columns:minmax(0,1fr)}
+}
+/* Desktop uses the same modules and controls as the mobile layout. */
+@media (min-width:1000px) and (min-aspect-ratio:6/5){
+ .shell{width:100%;max-width:1560px;padding:clamp(16px,2vw,30px) clamp(22px,3vw,48px) 42px}
+ #homeScreen{max-width:1160px}
+ #homeScreen .hero-stage .hero-guitars{height:clamp(225px,43vh,440px)!important;min-height:0!important}
+ #homeScreen .home-doors .home-door{min-height:88px!important}
+ #mrLearningDock .learning-menu{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ #mrLearningDock .learning-menu button{font-size:14px!important}
+ #micLab,#gmReading{max-width:1120px;margin-inline:auto}
+ #mrTheoryLab .mr21circle{max-width:min(550px,68vh)}
+ .fretwrap{overflow-x:auto}
+}
+#micLab .mr77ListenModes{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+#micLab .mr77ListenModes button[aria-pressed="true"]{background:#2675d2;border-color:#94c8ff}
+#micLab:not([data-tuner="no"]) .mr77ListenModes,#micLab .mr77ChordCard[hidden]{display:none!important}
+#micLab .mr77ChordCard{background:#102a4a;border:1px solid #517bb1;border-radius:12px;padding:14px;margin:12px 0}
+#micLab .mr77ChordName{font-size:clamp(24px,4vw,38px);font-weight:800;color:#c7e8ff;margin-top:5px}
+#micLab .mr77ChordCard p{margin:6px 0 0}
+#micLab[data-tuner="no"][data-listen-mode="chords"] :is(#micReadout,#micDetails,#micPosition,#micFret,#mr43NearNote,#micString,p.mic-small:last-child),
+#micLab[data-tuner="no"][data-listen-mode="chords"] .field:has(#micString),
+#micLab[data-tuner="no"][data-listen-mode="chords"] > p.mic-small:first-of-type{display:none!important}
+</style>
+<script id="mr77-listen-chords">
+(()=>{
+ const lab=document.getElementById('micLab');
+ const start=document.getElementById('micStart');
+ const mic=window.mrSharedMic;
+ if(!lab||!start||!mic)return;
+ const modes=document.createElement('div');
+ modes.className='mr77ListenModes';
+ modes.setAttribute('role','group');
+ modes.setAttribute('aria-label','Escuchar guitarra');
+ modes.innerHTML='<button type="button" aria-pressed="true">Notas</button><button type="button" aria-pressed="false">Acordes</button>';
+ const [notes, chords]=modes.querySelectorAll('button');
+ lab.querySelector('.mic-actions').before(modes);
+ const card=document.createElement('div');
+ card.className='mr77ChordCard';
+ card.hidden=true;
+ card.innerHTML='<strong>Acorde detectado</strong><div class="mr77ChordName" role="status" aria-live="polite">—</div><p>Rasguea un acorde y deja que suene un momento.</p>';
+ lab.querySelector('.mic-actions').after(card);
+ const name=card.querySelector('.mr77ChordName');
+ const symbols=['C','C♯','D','E♭','E','F','F♯','G','A♭','A','B♭','B'];
+ const voicings=mrGuitarChordVoicings.slice();
+ const templates=[
+  [4,'',[0,2,2,1,0,0]],[4,'m',[0,2,2,0,0,0]],
+  [9,'',[-1,0,2,2,2,0]],[9,'m',[-1,0,2,2,1,0]]
+ ];
+ for(const [root,suffix,shape] of templates){
+  for(let fret=1;fret<=11;fret++){
+   const midis=shape.flatMap((position,string)=>position<0?[]:[OPEN[string]+position+fret]);
+   const label=symbols[(root+fret)%12]+suffix;
+   voicings.push({label,midis,frequencies:midis.map(midi=>440*2**((midi-69)/12))});
+  }
+ }
+ let timer=null,candidate='',frames=0,lastSeen=0;
+ const listening=()=>!lab.hidden&&lab.dataset.tuner==='no'&&lab.dataset.listenMode==='chords';
+ function setName(value){if(name.textContent!==value)name.textContent=value}
+ const labels={
+  'C♯':'Do♯','E♭':'Mi♭','F♯':'Fa♯','A♭':'La♭','B♭':'Si♭',
+  C:'Do',D:'Re',E:'Mi',F:'Fa',G:'Sol',A:'La',B:'Si'
+ };
+ function format(label){
+  const match=label.match(/^([A-G][♯♭]?)(.*)$/);
+  if(!match)return label;
+  const [,root,suffix]=match;
+  const quality={'':'mayor',m:'menor','7':'séptima dominante',maj7:'séptima mayor',m7:'menor séptima'}[suffix];
+  const notation=document.getElementById('notation')?.value;
+  if(notation==='letter')return label;
+  const latin=labels[root]+' '+quality;
+  return notation==='latin'?latin:label+' · '+latin;
+ }
+ function sample(){
+  if(!listening()||!mic.isActive()){sync();return}
+  const spectrum=mic.chordSpectrum();
+  const match=spectrum&&mrRecognizeGuitarChord(spectrum,voicings);
+  const now=performance.now();
+  if(!match){
+   candidate='';frames=0;
+   if(now-lastSeen>1400)setName('—');
+   return;
+  }
+  if(candidate!==match.label){candidate=match.label;frames=0}
+  frames++;
+  if(frames>=2){lastSeen=now;setName(format(match.label))}
+ }
+ function sync(){
+  const active=listening();
+  card.hidden=!active;
+  if(active&&mic.isActive()){
+   if(timer===null)timer=setInterval(sample,125);
+   return;
+  }
+  if(timer!==null){
+   clearInterval(timer);timer=null;mic.stopChordSpectrum();
+  }
+  candidate='';frames=0;lastSeen=0;setName('—');
+ }
+ function select(mode){
+  lab.dataset.listenMode=mode;
+  notes.setAttribute('aria-pressed',String(mode==='notes'));
+  chords.setAttribute('aria-pressed',String(mode==='chords'));
+  sync();
+ }
+ notes.onclick=()=>select('notes');
+ chords.onclick=()=>select('chords');
+ select('notes');
+ new MutationObserver(sync).observe(lab,{attributes:true,attributeFilter:['hidden','data-tuner']});
+ window.addEventListener('mr-mic-state',sync);
+})();
+</script>
+</body></html>
 <!-- Visual theme v16: royal-blue palette and the user's three guitar styles. -->
